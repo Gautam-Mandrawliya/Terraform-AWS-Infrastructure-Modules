@@ -22,9 +22,9 @@ Before using these Terraform modules, ensure you have the following installed an
 
 1. Clone this repository:
 
-   git clone https://github.com/your-username/terraform-aws-infrastructure.git
+   git clone https://github.com/Gautam-Mandrawliya/Terraform-AWS-Infrastructure-Modules.git
 
-   cd terraform-aws-infrastructure
+   cd Terraform-AWS-Infrastructure-Modules
 
 
 2. Initialize Terraform:
