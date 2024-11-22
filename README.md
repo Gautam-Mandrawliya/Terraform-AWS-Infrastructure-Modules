@@ -70,7 +70,7 @@ Before using these Terraform modules, ensure you have the following installed an
 
 To use these modules, reference them in your Terraform configuration files. Please see the resource.tf file.
 
-## Terraform Backend Configuratio
+## Terraform Backend Configuration
 
 The Terraform state file is stored remotely in an S3 bucket. Ensure that you configure the backend appropriately for your project.
 

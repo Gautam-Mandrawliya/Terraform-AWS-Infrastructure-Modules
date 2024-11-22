@@ -3,6 +3,7 @@ variable "ports" {
 }
 
 variable "target_group_arns" {
+  description = "List of Target Group ARNs for the ALB."
   type = string
 }
 

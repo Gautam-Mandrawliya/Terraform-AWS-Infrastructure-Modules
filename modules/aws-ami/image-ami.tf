@@ -23,6 +23,10 @@ resource "aws_instance" "ec2-instance" {
   availability_zone = var.availability_zone
   instance_type     = var.instance_type
   user_data         = file("${path.module}/app.sh")
+  tags = {
+    Name        = "Web-App Instance"
+    Environment = "Development"
+  }
 }
 
 # Create an AMI from the EC2 instance
@@ -30,7 +34,8 @@ resource "aws_ami_from_instance" "ec2_ami" {
   source_instance_id = aws_instance.ec2-instance.id
   name               = "Web-App-AMI"
   tags = {
-    Name = "Web-App Amazon Linux AMI"
+    Name        = "Web-App AMI"
+    Environment = "Development"
   }
 }
 

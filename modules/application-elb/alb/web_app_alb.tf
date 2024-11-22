@@ -4,7 +4,7 @@ resource "aws_lb" "web_app-alb" {
   internal                         = false
   load_balancer_type               = "application"
   security_groups                  = [aws_security_group.web_app_alb-sg.id]
-  subnets                          = ["subnet-06109f2563255cfa4", "subnet-0c00e3ea761e75d5b"]
+  subnets                          = ["subnet-07528de53c17e11a5", "subnet-0babe537cc4557c87"]
   ip_address_type                  = "ipv4"
   enable_deletion_protection       = false
   enable_http2                     = true
